@@ -22,6 +22,6 @@ Functions:
           
 TO DO:
         
-        re-do creating tables so choosing different data types is possible
+        adaptively create a MySQL query for creating tables based on user input
 
         choosing user,password,host,database at start
