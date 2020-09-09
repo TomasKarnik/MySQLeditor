@@ -1,12 +1,6 @@
 
 import mysql.connector
 
-user=input("User:")
-##password=input("Password:")
-##host=input("Host:")
-##database=input("Database:")
-
-
 mydb = mysql.connector.connect(
   user='remote',
   password='test.test',
