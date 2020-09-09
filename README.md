@@ -19,6 +19,8 @@ Functions:1. MySQL create table
           
           8. MySQL Update
           
-TO DO: re-do creating tables so choosing different data types is possible
+TO DO:
+        
+        re-do creating tables so choosing different data types is possible
 
         choosing user,password,host,database at start
