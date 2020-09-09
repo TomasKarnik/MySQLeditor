@@ -40,11 +40,8 @@ elif choice == 2: ### fill table ###
   mycursor = mydb.cursor()
   tablename = input("Select table:")
   var1 = input("Column:")
-  sql = "INSERT INTO " + tablename + " (" + var1 + ") VALUES (%s, %s)" ###needs re-work
-  value1 = input("Value to insert 1:")
-  value2 = input("Value to insert 2:")
-  val = (value1, value2)
-  mycursor.execute(sql, val)
+  values=input("Values to add:")
+  mycursor.execute("INSERT INTO " + tablename + " (" + var1 + ") VALUES (" + values + ")" )
   mydb.commit()
 elif choice == 3:
   mycursor = mydb.cursor()
