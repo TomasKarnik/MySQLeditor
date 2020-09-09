@@ -1,9 +1,10 @@
 # MySQLeditor
 Simple python script to edit SQL databases
 
-Created by Tomáš Kárník
 
-Functions:1. MySQL create table
+Functions:
+
+          1. MySQL create table
 
           2. MySQL insert
           
