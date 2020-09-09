@@ -21,7 +21,5 @@ Functions:
           8. MySQL Update
           
 TO DO:
-        
-        adaptively create a MySQL query for creating tables based on user input
 
         choosing user,password,host,database at start
