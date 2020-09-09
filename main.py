@@ -32,23 +32,20 @@ choice = int(choice)
 if choice == 1:
   print("Create table")
   mycursor = mydb.cursor()
-  text1 = input("name of the table:")
-  var1=input("Varchar1 name:")
-  var2 = input("Varchar2 name:")
-  mycursor.execute("CREATE TABLE " + text1 + " (" + var1 + " VARCHAR(255), " + var2 + " VARCHAR(255))")
+  tablename= input("name of the table:")
+  var1=input("Enter desired parameters for culumns:")
+  print("Your query will looke like this: CREATE TABLE " + tablename + " (" + var1 + ")")
+  mycursor.execute("CREATE TABLE " + tablename + " (" + var1 + ")")
 elif choice == 2: ### fill table ###
   mycursor = mydb.cursor()
-  tablename=input("What would you like to fill table:")
-  var1=input("Column1:")
-  var2=input("Column1:")
-  sql = "INSERT INTO " + tablename + " (" + var1 + ", " + var2 + ") VALUES (%s, %s)"
+  tablename = input("Select table:")
+  var1 = input("Column:")
+  sql = "INSERT INTO " + tablename + " (" + var1 + ") VALUES (%s, %s)" ###needs re-work
   value1 = input("Value to insert 1:")
   value2 = input("Value to insert 2:")
-  val = (value1,value2)
+  val = (value1, value2)
   mycursor.execute(sql, val)
   mydb.commit()
-
-  print(mycursor.rowcount, "record inserted.")
 elif choice == 3:
   mycursor = mydb.cursor()
   tablename=input("Select table:")
