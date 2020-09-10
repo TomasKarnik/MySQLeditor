@@ -8,6 +8,7 @@ mydb = mysql.connector.connect(
   database='db',
 
 )
+print("MySQL editor")
 print(30 * '-')
 print("   M A I N - M E N U")
 print(30 * '-')
@@ -40,10 +41,11 @@ elif choice == 2: ### fill table ###
   mycursor = mydb.cursor()
   tablename = input("Select table:")
   var1 = input("Column:")
+  print("To input values use "" and , to separate them ")
   values=input("Values to add:")
   mycursor.execute("INSERT INTO " + tablename + " (" + var1 + ") VALUES (" + values + ")" )
   mydb.commit()
-elif choice == 3:
+elif choice == 3: ### MySQL select ###
   mycursor = mydb.cursor()
   tablename=input("Select table:")
   mycursor.execute("SELECT * FROM " + tablename + "")
@@ -116,6 +118,7 @@ elif choice == 9:
   print("MySQL editor")
   print("------------")
   print("Created by Tomáš Kárník")
+  print("------------")
   print("https://github.com/TomasKarnik/MySQLeditor")
 else:  ## if everything goes wrong ##
   print("Invalid number. Try again...")
