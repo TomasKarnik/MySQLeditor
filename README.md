@@ -20,6 +20,3 @@ Functions:
           
           8. MySQL Update
           
-TO DO:
-
-        choosing user,password,host,database at start
