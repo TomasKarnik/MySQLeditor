@@ -1,6 +1,7 @@
 # MySQLeditor
 Simple python script to edit SQL databases
 
+update 23.5.2024:This is my first python project. So no updates. I cant even look at the code.
 
 Functions:
 
